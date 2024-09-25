@@ -6,16 +6,10 @@ import {Button, buttonVariants} from '@/components/ui/button'
 import {Input} from '@/components/ui/input'
 import Link from "next/link";
 import {cn} from "@/lib/utils";
+import {bibleBooks} from "@/asset/bookList";
 
-const bibleBooks = [
-  {name: 'Genesis', chapters: 50},
-  {name: 'Exodus', chapters: 40},
-  {name: 'Leviticus', chapters: 27},
-  // Add more books as needed
-]
-
-export default function Component() {
-  const [expandedBook, setExpandedBook] = useState<string | null>(null)
+export default function BookPage() {
+  const [expandedBook, setExpandedBook] = useState<string | null>(null);
 
   const toggleBook = (bookName: string) => {
     setExpandedBook(expandedBook === bookName ? null : bookName)

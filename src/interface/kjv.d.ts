@@ -10,9 +10,7 @@ interface Book {
 }
 
 // Define the overall structure, which is an array of Book objects
-interface Bible {
-  [index: number]: Book;
-}
+type Bible = Array<Book>
 
 export {
   Bible,

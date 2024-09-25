@@ -2,7 +2,7 @@ import {Bell, Bookmark, Edit, FileText, Heart, Image, MapPin, Sun, Users, Video}
 import {Button} from "@/components/ui/button"
 import {Avatar, AvatarFallback} from "@/components/ui/avatar"
 
-export default function Component() {
+export default function MorePage() {
   return (
       <>
         <div className="flex justify-between items-center p-4">
@@ -66,7 +66,7 @@ export default function Component() {
                 Bookmarks
               </Button>
               <Button variant="ghost" className="w-full justify-start text-lg">
-                <Image className="h-6 w-6 mr-4" />
+                <Image className="h-6 w-6 mr-4"/>
                 Images
               </Button>
               <Button variant="ghost" className="w-full justify-start text-lg">

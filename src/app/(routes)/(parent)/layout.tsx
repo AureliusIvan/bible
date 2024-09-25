@@ -19,9 +19,11 @@ export default function RootLayout({
 }>) {
   return (
       <section className={`flex flex-col h-screen bg-black text-white font-sans`}>
+
         {children}
+
         {/* Bottom navigation */}
-        <div className="flex justify-between items-center p-4 bg-zinc-900">
+        <div className="fixed justify-between items-center p-4 bg-zinc-900 w-full flex bottom-0">
 
           <Link
               href={`/`}
